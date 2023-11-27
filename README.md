@@ -1,4 +1,4 @@
-# Azure Machine Learning - AutoML Example (v2 SDK_
+# Azure Machine Learning - AutoML Example (v2 SDK)
 
 #### Example notebook showcasing how to kick off an AutoML training job using the v2 SDK.
 
