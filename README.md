@@ -13,7 +13,7 @@ We have modified this sample so that all of the steps listed above are executed 
 - Update a managed batch endpoint with our newly trained/registered model
 - Update a managed real-time endpoint with our newly trained/registered model 
 
-! [Pipeline] (img/pipeline.png)
+![Pipeline](img/pipeline.png)
 
 <i>Note:</i> This sample was adapted from the following examples:
 - https://github.com/Azure/azureml-examples/tree/main/sdk/python/jobs/automl-standalone-jobs/automl-regression-task-hardware-performance
