@@ -28,6 +28,8 @@ def parse_args():
     parser.add_argument(
         "--model_base_name", type=str, help="Name of the registered model"
     )
+    parser.add_argument("--comparison_metrics", type=str, help="Comparison metrics (champion vs. challenger)")
+    parser.add_argument("--registered_model_details", type=str, help="Registered model details")
 
     # parse args
     args = parser.parse_args()
@@ -64,6 +66,9 @@ def main(args):
     registered_name = args.model_base_name
     print(f"Registering model as {registered_name}")
     mlflow.register_model(model_uri, registered_name)
+    
+    with open(os.path.join(args.registered_model_details, 'model_details.txt'), 'w') as f:
+        f.write(json.dumps({'model_uri': model_uri, 'registered_name': registered_name}))
 
 
 # run script

@@ -4,6 +4,8 @@
 
 In this sample, we retrieve data from a publicly available source, register training & validation datasets to our AML workspace, then execute an AutoML training job. Upon completion of the AutoML run, we will retrieve the best performing model and run it locally using a `ManagedOnlineEndpoint`. Here, we can run our new model from a Docker container and can easily update our deployment to target cloud compute resources if we aim to make the model available to other users/applications/processes.
 
+<br/>
+
 <b> Update (Jan. 16th, 2024):</b>
 We have modified this sample so that all of the steps listed above are executed as part of an Azure Machine Learning pipeline. In this pipeline we perform the following steps:
 - Load training/evaluation data from an ADLS Gen2-backed Delta Table
